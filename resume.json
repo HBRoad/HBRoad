@@ -1,0 +1,106 @@
+{
+    "titleNameMap": {
+        "educationList": "教育背景",
+        "projectList": "项目经历",
+        "skillList": "个人技能",
+        "awardList": "荣誉奖励"
+    },
+    "avatar": {
+        "src": "https://cdn.jsdelivr.net/gh/HBRoad/imgonline/paperimg/ZZ.JPG",
+        "hidden": false,
+        "shape": "circle"
+    },
+    "profile": {
+        "name": "李红斌",
+        "email": "lhbmq@hnu.edu.cn",
+        "mobile": "15273190992",
+        "github": "https://hbroad.github.io"
+    },
+    "educationList": [
+        {
+            "edu_time": ["2020.09", "2023.07"],
+            "school": "华侨大学",
+            "major": "机械工程（机器视觉）",
+            "academic_degree": "硕士",
+            "dataIndex": 0
+        },
+        {
+            "edu_time": ["2016.09", "2020.06"],
+            "school": "湖南大学",
+            "major": "机械设计制造及自动化",
+            "academic_degree": "本科",
+            "dataIndex": 1
+        }
+    ],
+    "awardList": [
+        {
+            "award_info": "“华为杯”第十八届中国研究生数学建模竞赛三等奖",
+            "award_time": "2021.12"
+        },
+        {
+            "award_info": "第二届 “用英语讲中国故事”活动校级三等奖",
+            "award_time": "2021.09"
+        },
+        {
+            "award_info": "湖南省工程模型设计制作大赛湖南大学赛区二等奖",
+            "award_time": "2019.10"
+        }
+    ],
+    "skillList": [
+        {
+            "skill_name": "C++",
+            "skill_desc": "掌握C++编程，有 MFC 开发经验",
+            "skill_level": 89
+        },
+        {
+            "skill_name": "OpenCV/PCL",
+            "skill_desc": "熟悉经典的图像处理和点云处理开源库",
+            "skill_level": 85
+        },
+        {
+            "skill_name": "结构光测量",
+            "skill_desc": "熟悉双目视觉标定及面结构光、线结构光测量，点云配准等",
+            "skill_level": 85
+        },
+        {
+            "skill_name": "机器人标定",
+            "skill_desc": "掌握机器人的手眼标定、基于 DH 参数的运动学标定及误差补偿",
+            "skill_level": 95
+        },
+        {
+            "skill_name": "其他",
+            "skill_desc": "CET6(口语B+)，计算机二级",
+            "skill_level": 99
+        }
+
+    ],
+    "projectList": [
+        {
+            "project_name": "基于双目视觉的机器人运动学标定及误差补偿研究",
+            "project_role": "主要负责人",
+            "project_time": "2022.5 - 至今",
+            "project_desc": "针对机器人绝对定位精度较低的问题，通过双目视觉进行运动学参数辨识，并在机器人关节空间进行补偿",
+            "project_content": "\n1. 通过单轴旋转法，利用双目视觉跟踪机器人末端标志点\n2.提取标志点坐标并重建，利用RANSAC拟合三维空间圆和直线，确定机器人基坐标系和工具坐标系\n3.利用前述拟合结果求解机器人位姿作为机器人的真实位姿\n4.基于DH参数建立误差模型，求解几何参数并在关节空间完成补偿"
+        },
+        {
+            "project_name": "基于视觉的机器人定位方法研究",
+            "project_role": "核心成员",
+            "project_time": "2021.07 - 2022.05",
+            "project_desc": "针对大型、异形件难以直接测量和定位的问题，利用机器人结合视觉进行多视角测量，结合点云配准完成定位",
+            "project_content": "\n1.采用多线结构光获取零件的三维点云数据，利用点云配准计算模型与三维点云数据的配准关系\n2.采用外部视觉系统和机械臂上的双目视觉系统结合的方式，进行手眼标定，求解三维点云数据在基座下的坐标\n3.采用多视角测量，计算出每个机器人位姿下的点云配准关系，优化定位精度"
+        },
+        {
+            "project_name": "视觉引导的机器人抛光系统开发",
+            "project_role": "核心成员",
+            "project_time": "\n2020.08 - 2021.5",
+            "project_desc": "基于 MFC 开发视觉测量软件",
+            "project_content": "\n1.投影多幅格雷码图像与四步相移图像至待测物体，重建出物体的稠密点云\n2.投影单幅黑白条纹图至待测物体，利用边缘提取和单应性矩阵匹配，重建出物体的稀疏点云\n3.开发手眼标定、运动学标定模块 \n4.结合OpenCV、PCL、Eigen、Ceres、Sophus、cvsba等开源库进行开发",
+            "dataIndex": 0
+        }
+
+    ],
+    "theme": {
+        "color": "#2f5785",
+        "tagColor": "#8bc34a"
+    }
+}
